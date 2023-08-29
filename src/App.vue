@@ -3,7 +3,7 @@
     <nav id="nav" class="navbar navbar-expand-lg navbar-light">
       <router-link to="/" class="navbar-brand">
         <img
-          src="@/assets/instagram.png"
+          src="@/assets/logo.png"
           alt=""
           height="40"
           class="d-inline-block align-top"
