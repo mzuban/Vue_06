@@ -6,8 +6,9 @@
           <a
             style="border: 1px solid #000; padding: 5px; cursor: pointer"
             @click="showAllUploads"
-            >Drag & Drop Image Here</a
           >
+            Drag & Drop Image Here
+          </a>
           <div style="margin-top: 10px"></div>
           <div v-for="(upload, index) in uploads" :key="index">
             <div v-if="upload.show">
@@ -16,7 +17,7 @@
                 @crop-success="cropSuccess"
                 @crop-upload-success="cropUploadSuccess"
                 @crop-upload-fail="cropUploadFail"
-                v-model="show"
+                v-model="upload.show"
                 :width="250"
                 :height="250"
                 url="/api/upload"
